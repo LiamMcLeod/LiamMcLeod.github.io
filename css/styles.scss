@@ -1,0 +1,502 @@
+@charset "utf-8";
+
+/*
+Order
+	* Positioning
+	* Displays and Box Model
+	* Colours
+	* Text Properties
+	* Other
+
+
+Anchors
+ 	* Link, Visited, Hover, Active
+	* L, V, H, A
+	* LoVe, HAte
+*/
+
+/* =========================================================================
+Imports
+========================================================================== */
+/* Base imports */
+
+/* Optional imports */
+
+/* =========================================================================
+Vars
+========================================================================= */
+
+//Container Vars
+$lightBlue: #05AEDE;
+$darkBlue: #384E77;
+$fadedBlue: #3A435E;
+$veryDarkBlue: #04151F;
+$altColour: #ddd;
+$footerColour: #1f1f1f;
+$darkFooterColour: rgba(26, 26, 26, .7);
+$altFooterColour: #222;
+
+
+//Text Vars
+$baseFontFamily: "Montserrat", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+$programmerFont: NotCourierSans, "Courier New", Consolas;
+// Text Colours
+$darkText: #616161;
+$lightText: #ddd;
+$linkColour: #00BCD4;
+
+//Fonts
+$largeTitle: 4em;
+
+// Desktop Line
+$baseFontSize: 1.6em;
+$lineHeight: 1.538em;
+
+// Tablet
+$tabletFontSize: 1.3em;
+$tabletLineHeight: 1.4em;
+
+// Mobile
+$mobileFontSize: 1em;
+$mobileLineHeight: 1.2em;
+
+//======================================================
+/*==================================================
+=            Bootstrap 3 Media Queries             =
+==================================================*/
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width: 320px) {
+  // MQ Classes
+  .widescreen-only {
+    display: none;
+  }
+  .desktop-only {
+    display: none
+  }
+;
+  .tablet-only {
+    display: none;
+  }
+  .mobile-only {
+    display: block;
+  }
+  .no-widescreen {
+    display: block;
+  }
+  .no-desktop {
+    display: block;
+  }
+  .no-tablet {
+    display:block;
+  }
+  .no-mobile {
+    display: none;
+  }
+
+  //Universal Classes
+  .text-light {
+    color: #eee;
+  }
+  .bg-light {
+
+  }
+  .bg-dark {
+  }
+
+  // HTML / BODY
+
+  html, body {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+  }
+
+  body {
+    max-width: 100vw;
+  }
+
+  #wrapper {
+    height: 100%;
+    max-width: 100%;
+    background: #ddd;
+  }
+
+  //Semantic Elements
+  nav {
+    height: 50px;
+    max-width: 100%;
+  }
+  .text-bold {
+    font-weight: bold;
+  }
+  .bg-blue{
+    background: $fadedBlue;
+    color: #eee;
+  }
+  .bg-white{
+    background:#ddd;
+    color: $fadedBlue;
+  }
+
+  header {
+    margin: 50px auto 0 auto;
+    height: 600px;
+
+    text-align: center;
+  }
+  #header-img {
+    width: 30%;
+    margin: 0 auto;
+  }
+  .title-text {
+    font-size: $largeTitle;
+    font-family: $programmerFont;
+  }
+  header .container-fluid {
+    padding: 50px 0 100px 0;
+    font-family: $programmerFont;
+  }
+
+  header .row {width:100%;}
+
+  header .container-fluid .row .title-text {
+    font-size: $largeTitle;
+  }
+  header hr {
+    margin: 5px auto 5px auto;
+    width: 30%;
+  }
+  header .container-fluid .row .caption-text {
+    font-size: $largeTitle - 1em;
+  }
+
+  header .container-fluid .row .sub-links {
+    font-size: $largeTitle - 2em;
+  }
+
+  header .container-fluid .row .sub-links .list-inline li a {
+    font-size: $largeTitle;
+  }
+  header .sub-links li>a{
+    font-size: $largeTitle - 2.4em;
+  }
+
+  main {
+    height:auto;
+    color: $fadedBlue;
+    text-align: center;
+  }
+
+  .portfolio, .about, .contact{
+    padding:150px 0 150px 0;
+    height: 900px;
+  }
+  .portfolio{height:500px}
+  .contact {
+
+    height:900px;}
+
+  .two-col {
+    width:80%;
+    margin:0 auto 0 auto;
+    text-align: center;
+  }
+
+
+  .three-col .col-left{
+    //text-align: left;
+  }
+  .three-col .col-mid {
+    //text-align: center;
+  }
+  .three-col .col-right{
+    //text-align: right;
+  }
+
+  main .title-text {
+  }
+
+  footer {
+    width:100%;
+    height:160px;
+    background: #303030;
+  }
+  .three-col{
+    padding:0 10% 0 10%;
+    text-align: justify;
+  }
+  .footer-above{
+    background: #303030;
+    width:130px;
+    height:40px;
+    margin:0 auto;
+    line-height: 40px;
+  }
+  .footer-below{
+    background:#222;
+    height:120px;
+    text-align: center;
+  }
+
+  .footer-below {
+    //width:50%;
+  }
+    .col-footer {
+    margin: 20px  auto 0 auto;
+  }
+    .col-copyright{
+      margin:102px 0 0 0;
+      font-size: .6em;
+    }
+
+    //Text
+  a, a:link, a:visited, a:hover, a:active {
+    color: $linkColour;
+  }
+  //Classes
+  .container-fluid .img-portfolio {
+    width: 100px;
+    height: 80px;
+  }
+
+  // Bootstrap Changes
+  .navbar-fixed-top .container-fluid{
+
+  }
+  .navbar-toggle {
+    margin: 10px 5px 8px 0;
+  }
+  .navbar-nav {
+    background: #222;
+    margin: 0 -15px
+  }
+
+  .navbar-nav .open .dropdown-menu > li > a, .navbar-default .navbar-nav .open .dropdown-menu {
+    color: #ddd;
+  }
+  .navbar-nav .open .dropdown-menu > li > a:hover {
+    color: #fff;
+    background: #444;
+  }
+  .navbar-nav .open .dropdown-menu, .navbar-default .navbar-nav .open .dropdown-menu {
+    background-color: #222;
+    color: #ddd;
+  }
+  .navbar-nav > li > a, .navbar a {
+    line-height: 20px;
+  }
+  #contactForm .row :not(.submit)  {
+    margin-top:20px;
+    border-bottom: 0;
+    border-top:1px solid $fadedBlue;
+  }
+  .first-row{padding-bottom: 50px;}
+
+  .last-row{
+    //width:100%;
+    height:auto;
+    //padding-bottom:250px;}
+  }
+
+  #contactForm{
+    margin:0 auto;
+    width:50%;
+    padding:0 50px 0 50px;
+    font-size:1em;
+  }
+
+  #contactForm input{
+    height:50px;
+    margin:5px 0 5px 0;
+    border:0;
+    font-size:2em;
+    background:#ddd;
+  }
+  #contactForm textarea{
+    margin:5px 0 50px 0;
+    border:0;
+    font-size:2em;
+    background:#ddd;
+  }
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width: 480px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width: 768px) {
+  // MQ Classes
+  .widescreen-only {
+    display: none;
+  }
+  .desktop-only {
+    display: none
+  }
+;
+  .tablet-only {
+    display: block;
+  }
+  .mobile-only {
+    display: none;
+  }
+  .no-widescreen {
+    display: block;
+  }
+  .no-desktop {
+    display: block;
+  }
+  .no-tablet {
+    display: none;
+  }
+  .no-mobile {
+    display: block;
+  }
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width: 992px) {
+  nav {
+  //width:100%;
+    height: 100px;
+    max-width:1920px;
+    margin:0 auto;
+  }
+
+  nav .container-fluid {
+
+  }
+
+  header {
+    margin: 100px auto 0 auto;
+    padding: 100px 0 100px 0;
+    height: 600px;
+  }
+  main {
+
+  }
+  footer {
+  }
+
+  #header-img {
+    width: 10%;
+    margin: 0 auto;
+  }
+  // Bootstrap Classes
+
+  .navbar-nav > li > a, .navbar a {
+    line-height: 70px;
+  }
+  .navbar-toggle {
+    margin: 30px 5px 8px 0;
+  }
+
+  // MQ Classes
+  .widescreen-only {
+    display: none;
+  }
+  .desktop-only {
+    display: block
+  }
+;
+  .tablet-only {
+    display: none;
+  }
+  .mobile-only {
+    display: none;
+  }
+  .no-widescreen {
+    display: block;
+  }
+  .no-desktop {
+    display: none;
+  }
+  .no-tablet {
+    display: block;
+  }
+  .no-mobile {
+    display: block;
+  }
+
+  // Scroll Webkit
+  ::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+    z-index: 100;
+  }
+  ::-webkit-scrollbar-button {
+    width: 0;
+    height: 0;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: rgba(121, 121, 121, 0.5);
+    border-radius: 60px;
+  }
+  ::-webkit-scrollbar-track {
+    background: transparent;
+    border: 0 none transparent;
+    border-radius: 60px;
+  }
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width: 1200px) {
+  // MQ Classes
+  .widescreen-only {
+    display: block;
+  }
+  .desktop-only {
+    display: none
+  }
+;
+  .tablet-only {
+    display: none;
+  }
+  .mobile-only {
+    display: none;
+  }
+  .no-widescreen {
+    display: none;
+  }
+  .no-desktop {
+    display: block;
+  }
+  .no-tablet {
+    display: block;
+  }
+  .no-mobile {
+    display: block;
+  }
+  body {
+    background: #333;
+  }
+  #wrapper {
+    max-width: 1920px;
+    margin: 0 auto;
+    background: #fff;
+  }
+}
+.cf:before,
+.cf:after {
+  content: " "; /* 1 */
+  display: table; /* 2 */
+}
+
+.cf:after {
+  clear: both;
+}
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.cf {
+  *zoom: 1;
+}
+
