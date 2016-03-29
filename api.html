@@ -1,0 +1,175 @@
+<!DOCTYPE HTML><html><head><title>Examplar API documentation</title><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><meta name="generator" content="https://github.com/kevinrenskers/raml2html 2.4.0"><link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.1/styles/default.min.css"><script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script><script type="text/javascript" src="https://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script><script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.1/highlight.min.js"></script><script type="text/javascript">
+      $(document).ready(function() {
+        $('.page-header pre code, .top-resource-description pre code').each(function(i, block) {
+          hljs.highlightBlock(block);
+        });
+
+        $('[data-toggle]').click(function() {
+          var selector = $(this).data('target') + ' pre code';
+          $(selector).each(function(i, block) {
+            hljs.highlightBlock(block);
+          });
+        });
+
+        // open modal on hashes like #_action_get
+        $(window).bind('hashchange', function(e) {
+          var anchor_id = document.location.hash.substr(1); //strip #
+          var element = $('#' + anchor_id);
+
+          // do we have such element + is it a modal?  --> show it
+          if (element.length && element.hasClass('modal')) {
+            element.modal('show');
+          }
+        });
+
+        // execute hashchange on first page load
+        $(window).trigger('hashchange');
+
+        // remove url fragment on modal hide
+        $('.modal').on('hidden.bs.modal', function() {
+          try {
+            if (history && history.replaceState) {
+                history.replaceState({}, '', '#');
+            }
+          } catch(e) {}
+        });
+      });
+    </script><style>
+      .hljs {
+        background: transparent;
+      }
+      .parent {
+        color: #999;
+      }
+      .list-group-item > .badge {
+        float: none;
+        margin-right: 6px;
+      }
+      .panel-title > .methods {
+        float: right;
+      }
+      .badge {
+        border-radius: 0;
+        text-transform: uppercase;
+        width: 70px;
+        font-weight: normal;
+        color: #f3f3f6;
+        line-height: normal;
+      }
+      .badge_get {
+        background-color: #63a8e2;
+      }
+      .badge_post {
+        background-color: #6cbd7d;
+      }
+      .badge_put {
+        background-color: #22bac4;
+      }
+      .badge_delete {
+        background-color: #d26460;
+      }
+      .badge_patch {
+        background-color: #ccc444;
+      }
+      .list-group, .panel-group {
+        margin-bottom: 0;
+      }
+      .panel-group .panel+.panel-white {
+        margin-top: 0;
+      }
+      .panel-group .panel-white {
+        border-bottom: 1px solid #F5F5F5;
+        border-radius: 0;
+      }
+      .panel-white:last-child {
+        border-bottom-color: white;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+      }
+      .panel-white .panel-heading {
+        background: white;
+      }
+      .tab-pane ul {
+        padding-left: 2em;
+      }
+      .tab-pane h2 {
+        font-size: 1.2em;
+        padding-bottom: 4px;
+        border-bottom: 1px solid #ddd;
+      }
+      .tab-pane h3 {
+        font-size: 1.1em;
+      }
+      .tab-content {
+        border-left: 1px solid #ddd;
+        border-right: 1px solid #ddd;
+        border-bottom: 1px solid #ddd;
+        padding: 10px;
+      }
+      #sidebar {
+        margin-top: 30px;
+        padding-right: 5px;
+        overflow: auto;
+        height: 90%;
+      }
+      .top-resource-description {
+        border-bottom: 1px solid #ddd;
+        background: #fcfcfc;
+        padding: 15px 15px 0 15px;
+        margin: -15px -15px 10px -15px;
+      }
+      .resource-description {
+        border-bottom: 1px solid #fcfcfc;
+        background: #fcfcfc;
+        padding: 15px 15px 0 15px;
+        margin: -15px -15px 10px -15px;
+      }
+      .resource-description p:last-child {
+        margin: 0;
+      }
+      .list-group .badge {
+        float: left;
+      }
+      .method_description {
+        margin-left: 85px;
+      }
+      .method_description p:last-child {
+        margin: 0;
+      }
+      .list-group-item {
+        cursor: pointer;
+      }
+      .list-group-item:hover {
+        background-color: #f5f5f5;
+      }
+    </style></head><body data-spy="scroll" data-target="#sidebar"><div class="container"><div class="row"><div class="col-md-9" role="main"><div class="page-header"><h1>Examplar API documentation <small>version 0.0.1</small></h1><p>examplar.herokuapp.com/api</p></div><div class="panel panel-default"><div class="panel-heading"><h3 id="search" class="panel-title">/search</h3></div><div class="panel-body"><div class="top-resource-description"><p>Queries the Question table for questions like the term entered.</p></div><div class="panel-group"><div class="panel panel-white"><div class="panel-heading"><h4 class="panel-title"><a class="collapsed" data-toggle="collapse" href="#panel_search__term_"><span class="parent">/search</span>/{term}</a> <span class="methods"><a href="#search__term__get"><span class="badge badge_get">get</span></a></span></h4></div><div id="panel_search__term_" class="panel-collapse collapse"><div class="panel-body"><div class="list-group"><div onclick="window.location.href = '#search__term__get'" class="list-group-item"><span class="badge badge_get">get</span><div class="method_description"></div><div class="clearfix"></div></div></div></div></div><div class="modal fade" tabindex="0" id="search__term__get"><div class="modal-dialog"><div class="modal-content"><div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button><h4 class="modal-title" id="myModalLabel"><span class="badge badge_get">get</span> <span class="parent">/search</span>/{term}</h4></div><div class="modal-body"><ul class="nav nav-tabs"><li class="active"><a href="#search__term__get_request" data-toggle="tab">Request</a></li><li><a href="#search__term__get_response" data-toggle="tab">Response</a></li></ul><div class="tab-content"><div class="tab-pane active" id="search__term__get_request"><h3>URI Parameters</h3><ul><li><strong>Search Term</strong>: <em>required (string)</em><p>The search term used in the SQL query to get questions like {term}</p></li></ul><h3>Query Parameters</h3><ul><li><strong>pretty</strong>: <em>(boolean)</em><p>prettifies JSON output.</p></li></ul></div><div class="tab-pane" id="search__term__get_response"><h2>HTTP status code <a href="http://httpstatus.es/200" target="_blank">200</a></h2><h3>Body</h3><p><strong>Type: application/json</strong></p><p><strong>Example</strong>:</p><pre><code>{
+  "QuestionId": 7,
+  "QuestionNumber": 7,
+  "QuestionText": "Describe a method that can, without the use of binary addition, multiply any unsigned\r\nbinary integer by the binary number 10 (the denary number 2).",
+  "ExamPaperUnit": "COMP1",
+  "ExamPaperSeason": "Summer",
+  "ExamPaperDate": "2014-06-02T00:00:00.000Z",
+  "ExamBoardName": "AQA",
+  "LevelTitle": "AS",
+  "SubjectTitle": "Computing"
+}
+</code></pre></div></div></div></div></div></div></div></div></div></div><div class="panel panel-default"><div class="panel-heading"><h3 id="result" class="panel-title">/result</h3></div><div class="panel-body"><div class="top-resource-description"><p>Fetches result based upon an ID parsed.</p></div><div class="panel-group"><div class="panel panel-white"><div class="panel-heading"><h4 class="panel-title"><a class="collapsed" data-toggle="collapse" href="#panel_result__id_"><span class="parent">/result</span>/{id}</a> <span class="methods"><a href="#result__id__get"><span class="badge badge_get">get</span></a></span></h4></div><div id="panel_result__id_" class="panel-collapse collapse"><div class="panel-body"><div class="list-group"><div onclick="window.location.href = '#result__id__get'" class="list-group-item"><span class="badge badge_get">get</span><div class="method_description"></div><div class="clearfix"></div></div></div></div></div><div class="modal fade" tabindex="0" id="result__id__get"><div class="modal-dialog"><div class="modal-content"><div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button><h4 class="modal-title" id="myModalLabel"><span class="badge badge_get">get</span> <span class="parent">/result</span>/{id}</h4></div><div class="modal-body"><ul class="nav nav-tabs"><li class="active"><a href="#result__id__get_request" data-toggle="tab">Request</a></li><li><a href="#result__id__get_response" data-toggle="tab">Response</a></li></ul><div class="tab-content"><div class="tab-pane active" id="result__id__get_request"><h3>URI Parameters</h3><ul><li><strong>Result ID</strong>: <em>required (integer)</em><p>The ID used SQL query to get a question</p></li></ul><h3>Query Parameters</h3><ul><li><strong>pretty</strong>: <em>(boolean)</em><p>prettifies JSON output.</p></li></ul></div><div class="tab-pane" id="result__id__get_response"><h2>HTTP status code <a href="http://httpstatus.es/200" target="_blank">200</a></h2><h3>Body</h3><p><strong>Type: application/json</strong></p><p><strong>Example</strong>:</p><pre><code>{
+    "QuestionId":1,
+    "ExaminerId":1,
+    "ExamPaperId":1,
+    "TopicId":1,
+    "QuestionNumber":1,
+    "QuestionText":"If the bit pattern in &lt;strong&gt;Figure 1&lt;/strong&gt; is an &lt;strong&gt;unsigned binary integer&lt;/strong&gt;, what is the denary\r\nequivalent of this bit pattern?",
+    "QuestionMarks":1,
+    "QuestionMarkText":"182;",
+    "ExamPaperUnit":"COMP1",
+    "ExamPaperSeason":"Summer",
+    "ExamPaperDate":"2014-06-02T00:00:00.000Z",
+    "ExamBoardName":"AQA",
+    "LevelTitle":"AS",
+    "SubjectTitle":"Computing","TopicTitle":"Data Representation",
+    "ExaminerNote":"The topics covered by this question were generally well-understood. Most students were able to answer parts 1-2 and 5-6 well, though a number of students gave an answer of 74 instead of -74 as the answer for part 2. For part 3, most students were not able to state the correct range with the most common wrong answer being an upper limit of 128 (rather than 127). Many students did not read the question carefully for part 4 and assumed that four bits were being used before the binary point when the question said three bits before the binary point. A number of students also did not read the question carefully for part 7 and gave answers involving the use of binary addition.",
+    "QuestionImageData":"base64img",
+    "QuestionImageId":1
+}
+</code></pre></div></div></div></div></div></div></div></div></div></div><div class="panel panel-default"><div class="panel-heading"><h3 id="more" class="panel-title">/more</h3></div><div class="panel-body"><div class="panel-group"></div></div></div><div class="panel panel-default"><div class="panel-heading"><h3 id="related" class="panel-title">/related</h3></div><div class="panel-body"><div class="panel-group"></div></div></div><div class="panel panel-default"><div class="panel-heading"><h3 id="examiner" class="panel-title">/examiner</h3></div><div class="panel-body"><div class="panel-group"></div></div></div><div class="panel panel-default"><div class="panel-heading"><h3 id="filter" class="panel-title">/filter</h3></div><div class="panel-body"><div class="panel-group"></div></div></div><div class="panel panel-default"><div class="panel-heading"><h3 id="image" class="panel-title">/image</h3></div><div class="panel-body"><div class="panel-group"></div></div></div></div><div class="col-md-3"><div id="sidebar" class="hidden-print affix" role="complementary"><ul class="nav nav-pills nav-stacked"><li><a href="#search">/search</a></li><li><a href="#result">/result</a></li><li><a href="#more">/more</a></li><li><a href="#related">/related</a></li><li><a href="#examiner">/examiner</a></li><li><a href="#filter">/filter</a></li><li><a href="#image">/image</a></li></ul></div></div></div></div></body></html>
