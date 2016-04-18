@@ -1,0 +1,5 @@
+#ignore dirs
+.idea/*
+node_modules/*
+#.env
+
