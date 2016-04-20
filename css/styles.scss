@@ -42,7 +42,7 @@ $baseFontFamily: "Montserrat", "Helvetica Neue", Helvetica, Roboto, Arial, sans-
 $programmerFont: NotCourierSans, "Courier New", Consolas;
 // Text Colours
 $darkText: #616161;
-$lightText: #ddd;
+$lightText: #eee;
 $linkColour: #00BCD4;
 
 //Fonts
@@ -183,6 +183,9 @@ $mobileLineHeight: 1.2em;
   header .sub-links li>a{
     font-size: $largeTitle - 2.4em;
   }
+  header .sub-links a:link {
+    color:#fff;
+  }
 
   main {
     height:auto;
@@ -225,6 +228,9 @@ $mobileLineHeight: 1.2em;
     background: #303030;
   }
   .footer-above a:link {
+    color:#fff;
+  }
+  .footer-below a:link {
     color:#fff;
   }
   .three-col{
