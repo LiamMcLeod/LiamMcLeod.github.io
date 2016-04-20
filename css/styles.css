@@ -121,6 +121,9 @@ Vars
   header .sub-links li > a {
     font-size: 1.6em; }
 
+  header .sub-links a, a:link, a:visited {
+    color: #fff; }
+
   main {
     height: auto;
     color: #3A435E;
@@ -145,6 +148,12 @@ Vars
     width: 100%;
     height: 160px;
     background: #303030; }
+
+  .footer-above a:visited {
+    color: #fff; }
+
+  .footer-below a:link, a:visited {
+    color: #fff; }
 
   .three-col {
     padding: 0 10% 0 10%;
