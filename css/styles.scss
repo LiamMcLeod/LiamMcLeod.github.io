@@ -183,7 +183,7 @@ $mobileLineHeight: 1.2em;
   header .sub-links li>a{
     font-size: $largeTitle - 2.4em;
   }
-  header .sub-links a:link {
+  header .sub-links a, a:link, a:visited {
     color:#fff;
   }
 
@@ -227,10 +227,10 @@ $mobileLineHeight: 1.2em;
     height:160px;
     background: #303030;
   }
-  .footer-above a:link {
+  .footer-above a:visited {
     color:#fff;
   }
-  .footer-below a:link {
+  .footer-below a:link, a:visited {
     color:#fff;
   }
   .three-col{
