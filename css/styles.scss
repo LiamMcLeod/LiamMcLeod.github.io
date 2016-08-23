@@ -36,7 +36,6 @@ $footerColour: #1f1f1f;
 $darkFooterColour: rgba(26, 26, 26, .7);
 $altFooterColour: #222;
 
-
 //Text Vars
 $baseFontFamily: "Montserrat", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
 $programmerFont: NotCourierSans, "Courier New", Consolas;
@@ -89,7 +88,7 @@ $mobileLineHeight: 1.2em;
     display: block;
   }
   .no-tablet {
-    display:block;
+    display: block;
   }
   .no-mobile {
     display: none;
@@ -132,12 +131,12 @@ $mobileLineHeight: 1.2em;
   .text-bold {
     font-weight: bold;
   }
-  .bg-blue{
+  .bg-blue {
     background: $fadedBlue;
     color: #eee;
   }
-  .bg-white{
-    background:#ddd;
+  .bg-white {
+    background: #ddd;
     color: $fadedBlue;
   }
 
@@ -160,7 +159,9 @@ $mobileLineHeight: 1.2em;
     font-family: $programmerFont;
   }
 
-  header .row {width:100%;}
+  header .row {
+    width: 100%;
+  }
 
   header .container-fluid .row .title-text {
     font-size: $largeTitle;
@@ -180,42 +181,43 @@ $mobileLineHeight: 1.2em;
   header .container-fluid .row .sub-links .list-inline li a {
     font-size: $largeTitle;
   }
-  header .sub-links li>a{
+  header .sub-links li > a {
     font-size: $largeTitle - 2.4em;
   }
   header .sub-links a, a:link, a:visited {
-    color:#fff;
+    color: #fff;
   }
 
   main {
-    height:auto;
+    height: auto;
     color: $fadedBlue;
     text-align: center;
   }
 
-  .portfolio, .about, .contact{
-    padding:150px 0 150px 0;
+  .portfolio, .about, .contact {
+    padding: 150px 0 150px 0;
     height: 900px;
   }
-  .portfolio{height:500px}
+  .portfolio {
+    height: 500px
+  }
   .contact {
-
-    height:900px;}
+    height: 900px;
+  }
 
   .two-col {
-    width:80%;
-    margin:0 auto 0 auto;
+    width: 80%;
+    margin: 0 auto 0 auto;
     text-align: center;
   }
 
-
-  .three-col .col-left{
+  .three-col .col-left {
     //text-align: left;
   }
   .three-col .col-mid {
     //text-align: center;
   }
-  .three-col .col-right{
+  .three-col .col-right {
     //text-align: right;
   }
 
@@ -223,45 +225,45 @@ $mobileLineHeight: 1.2em;
   }
 
   footer {
-    width:100%;
-    height:160px;
+    width: 100%;
+    height: 160px;
     background: #303030;
   }
   .footer-above a:visited {
-    color:#fff;
+    color: #fff;
   }
   .footer-below a:link, a:visited {
-    color:#fff;
+    color: #fff;
   }
-  .three-col{
-    padding:0 10% 0 10%;
+  .three-col {
+    padding: 0 10% 0 10%;
     text-align: justify;
   }
-  .footer-above{
+  .footer-above {
     background: #303030;
-    width:130px;
-    height:40px;
-    margin:0 auto;
+    width: 130px;
+    height: 40px;
+    margin: 0 auto;
     line-height: 40px;
   }
-  .footer-below{
-    background:#222;
-    height:120px;
+  .footer-below {
+    background: #222;
+    height: 120px;
     text-align: center;
   }
 
   .footer-below {
     //width:50%;
   }
-    .col-footer {
-    margin: 20px  auto 0 auto;
+  .col-footer {
+    margin: 20px auto 0 auto;
   }
-    .col-copyright{
-      margin:102px 0 0 0;
-      font-size: .6em;
-    }
+  .col-copyright {
+    margin: 102px 0 0 0;
+    font-size: .6em;
+  }
 
-    //Text
+  //Text
   a, a:link, a:visited, a:hover, a:active {
     color: $linkColour;
   }
@@ -272,7 +274,7 @@ $mobileLineHeight: 1.2em;
   }
 
   // Bootstrap Changes
-  .navbar-fixed-top .container-fluid{
+  .navbar-fixed-top .container-fluid {
 
   }
   .navbar-toggle {
@@ -297,38 +299,40 @@ $mobileLineHeight: 1.2em;
   .navbar-nav > li > a, .navbar a {
     line-height: 20px;
   }
-  #contactForm .row :not(.submit)  {
-    margin-top:20px;
+  #contactForm .row :not(.submit) {
+    margin-top: 20px;
     border-bottom: 0;
-    border-top:1px solid $fadedBlue;
+    border-top: 1px solid $fadedBlue;
   }
-  .first-row{padding-bottom: 50px;}
+  .first-row {
+    padding-bottom: 50px;
+  }
 
-  .last-row{
+  .last-row {
     //width:100%;
-    height:auto;
+    height: auto;
     //padding-bottom:250px;}
   }
 
-  #contactForm{
-    margin:0 auto;
-    width:50%;
-    padding:0 50px 0 50px;
-    font-size:1em;
+  #contactForm {
+    margin: 0 auto;
+    width: 50%;
+    padding: 0 50px 0 50px;
+    font-size: 1em;
   }
 
-  #contactForm input{
-    height:50px;
-    margin:5px 0 5px 0;
-    border:0;
-    font-size:2em;
-    background:#ddd;
+  #contactForm input {
+    height: 50px;
+    margin: 5px 0 5px 0;
+    border: 0;
+    font-size: 2em;
+    background: #ddd;
   }
-  #contactForm textarea{
-    margin:5px 0 50px 0;
-    border:0;
-    font-size:2em;
-    background:#ddd;
+  #contactForm textarea {
+    margin: 5px 0 50px 0;
+    border: 0;
+    font-size: 2em;
+    background: #ddd;
   }
 }
 
@@ -371,10 +375,10 @@ $mobileLineHeight: 1.2em;
 /* Medium Devices, Desktops */
 @media only screen and (min-width: 992px) {
   nav {
-  //width:100%;
-    height: 100px;
-    max-width:1920px;
-    margin:0 auto;
+    //width:100%;
+    height: 50px;
+    max-width: 1920px;
+    margin: 0 auto;
   }
 
   nav .container-fluid {
@@ -382,7 +386,7 @@ $mobileLineHeight: 1.2em;
   }
 
   header {
-    margin: 100px auto 0 auto;
+    margin: 50px auto 0 auto;
     padding: 100px 0 100px 0;
     height: 600px;
   }
@@ -399,7 +403,7 @@ $mobileLineHeight: 1.2em;
   // Bootstrap Classes
 
   .navbar-nav > li > a, .navbar a {
-    line-height: 70px;
+    line-height: 20px;
   }
   .navbar-toggle {
     margin: 30px 5px 8px 0;
@@ -490,6 +494,7 @@ $mobileLineHeight: 1.2em;
     background: #fff;
   }
 }
+
 .cf:before,
 .cf:after {
   content: " "; /* 1 */

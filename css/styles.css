@@ -172,7 +172,7 @@ Vars
     text-align: center; }
 
   .col-footer {
-    margin: 20px  auto 0 auto; }
+    margin: 20px auto 0 auto; }
 
   .col-copyright {
     margin: 102px 0 0 0;
@@ -264,12 +264,12 @@ Vars
 /* Medium Devices, Desktops */
 @media only screen and (min-width: 992px) {
   nav {
-    height: 100px;
+    height: 50px;
     max-width: 1920px;
     margin: 0 auto; }
 
   header {
-    margin: 100px auto 0 auto;
+    margin: 50px auto 0 auto;
     padding: 100px 0 100px 0;
     height: 600px; }
 
@@ -278,7 +278,7 @@ Vars
     margin: 0 auto; }
 
   .navbar-nav > li > a, .navbar a {
-    line-height: 70px; }
+    line-height: 20px; }
 
   .navbar-toggle {
     margin: 30px 5px 8px 0; }
