@@ -199,8 +199,16 @@ Vars
     margin: 10px 5px 8px 0; }
 
   .navbar-nav {
-    background: #222;
     margin: 0 -15px; }
+
+  .navbar-nav a {
+    color: #eee; }
+
+  .navbar-header a {
+    color: #eee; }
+
+  .navbar-nav a :hover {
+    color: #222; }
 
   .navbar-nav .open .dropdown-menu > li > a, .navbar-default .navbar-nav .open .dropdown-menu {
     color: #ddd; }
@@ -279,9 +287,12 @@ Vars
     margin: 0 auto; }
 
   header {
-    margin: 50px auto 0 auto;
-    padding: 100px 0 100px 0;
-    height: 600px; }
+    margin: 0px auto 0 auto;
+    padding: 200px 0 200px 0;
+    height: 920px; }
+
+  footer .steam-profile span {
+    color: #eee; }
 
   #header-img {
     width: 10%;
