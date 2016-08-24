@@ -135,7 +135,7 @@ $mobileLineHeight: 1.2em;
   #wrapper {
     height: 100%;
     max-width: 100%;
-    background: #ddd;
+    background: /*#ddd*/ #222;
   }
 
   //Semantic Elements
@@ -158,7 +158,9 @@ $mobileLineHeight: 1.2em;
   header {
     margin: 0 auto 0 auto;
     padding: 50px 0 0 0;
-    height: 720px;
+    min-height: 720px;
+    max-height: 1060px;
+    height: 100%;
     text-align: center;
   }
   #header-img {
@@ -169,7 +171,7 @@ $mobileLineHeight: 1.2em;
     font-size: $largeTitle;
     font-family: $programmerFont;
   }
-  header .container-fluid {
+  header .container {
     padding: 50px 0 100px 0;
     font-family: $programmerFont;
   }
@@ -178,26 +180,26 @@ $mobileLineHeight: 1.2em;
     width: 100%;
   }
 
-  header .container-fluid .row .title-text {
+  header .container .title-text {
     font-size: $largeTitle;
   }
   header hr {
     margin: 5px auto 5px auto;
     width: 30%;
   }
-  header .container-fluid .row .caption-text {
+  header .container .caption-text {
     font-size: $largeTitle - 1em;
   }
 
-  header .container-fluid .row .sub-links {
+  header .container .row .sub-links {
     font-size: $largeTitle - 2em;
   }
 
-  header .container-fluid .row .sub-links .list-inline li a {
+  header .container .row .sub-links .list-inline li a {
     font-size: $largeTitle;
   }
   header .sub-links li > a {
-    font-size: $largeTitle - 2.4em;
+    font-size: $largeTitle - 1em;
   }
   header .sub-links a, a:link, a:visited {
     color: #fff;
@@ -375,6 +377,19 @@ $mobileLineHeight: 1.2em;
 
 /* Small Devices, Tablets */
 @media only screen and (min-width: 768px) {
+   header .container .row .sub-links {
+    font-size: $largeTitle - 2em;
+  }
+
+  header .container .row .sub-links .list-inline li a {
+    font-size: $largeTitle;
+  }
+  header .sub-links li > a {
+    font-size: $largeTitle - 2.4em;
+  }
+  header .sub-links a, a:link, a:visited {
+    color: #fff;
+  }
   // MQ Classes
   .widescreen-only {
     display: none;
@@ -419,7 +434,10 @@ $mobileLineHeight: 1.2em;
   header {
     margin: 0px auto 0 auto;
     padding: 160px 0 200px 0;
-    height: 805px;
+      min-height: 720px;
+    max-height: 850px;
+    height: 100%;
+    /* height: 805px; */
   }
   main {
 
@@ -524,7 +542,7 @@ $mobileLineHeight: 1.2em;
   #wrapper {
     max-width: 1920px;
     margin: 0 auto;
-    background: #fff;
+    background: #222;
   }
 }
 
