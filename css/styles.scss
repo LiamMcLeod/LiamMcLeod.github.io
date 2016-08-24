@@ -103,6 +103,16 @@ $mobileLineHeight: 1.2em;
   }
   .bg-dark {
   }
+  .navbar-trans {
+    background: transparent;
+    color: #fff;
+  }
+  .navbar-header a:hover {
+    color: #ddd;
+  }
+  .navbar-header a:focus {
+    color: #ddd;
+  }
 
   // HTML / BODY
 
