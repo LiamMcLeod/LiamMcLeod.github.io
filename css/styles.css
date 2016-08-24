@@ -26,6 +26,9 @@ Vars
 /*==========  Mobile First Method  ==========*/
 /* Custom, iPhone Retina */
 @media only screen and (min-width: 320px) {
+  a, a:link, a:visited, a:hover, a:active {
+    color: #00BCD4; }
+
   .widescreen-only {
     display: none; }
 
@@ -93,8 +96,9 @@ Vars
     color: #3A435E; }
 
   header {
-    margin: 50px auto 0 auto;
-    height: 600px;
+    margin: 0 auto 0 auto;
+    padding: 50px 0 0 0;
+    height: 720px;
     text-align: center; }
 
   #header-img {
@@ -133,6 +137,9 @@ Vars
 
   header .sub-links a, a:link, a:visited {
     color: #fff; }
+
+  header .mobile-btn {
+    margin-top: 50px; }
 
   main {
     height: auto;
@@ -187,9 +194,6 @@ Vars
   .col-copyright {
     margin: 102px 0 0 0;
     font-size: .6em; }
-
-  a, a:link, a:visited, a:hover, a:active {
-    color: #00BCD4; }
 
   .container-fluid .img-portfolio {
     width: 100px;
@@ -252,7 +256,13 @@ Vars
     margin: 5px 0 50px 0;
     border: 0;
     font-size: 2em;
-    background: #ddd; } }
+    background: #ddd; }
+
+  button {
+    margin: 0 auto; }
+
+  button a :link {
+    color: #222; } }
 /* Extra Small Devices, Phones */
 /* Small Devices, Tablets */
 @media only screen and (min-width: 768px) {
