@@ -1,0 +1,13 @@
+<script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
+
+long-light
+<div class="LI-profile-badge"  data-version="v1" data-size="medium" data-locale="en_US" data-type="vertical" data-theme="light" data-vanity="liam-mcleod-959105111"><a class="LI-simple-link" href='https://uk.linkedin.com/in/liam-mcleod-959105111?trk=profile-badge'>Liam McLeod</a></div>
+
+small-light
+<div class="LI-profile-badge"  data-version="v1" data-size="medium" data-locale="en_US" data-type="horizontal" data-theme="light" data-vanity="liam-mcleod-959105111"><a class="LI-simple-link" href='https://uk.linkedin.com/in/liam-mcleod-959105111?trk=profile-badge'>Liam McLeod</a></div>
+
+long-dark
+<div class="LI-profile-badge"  data-version="v1" data-size="medium" data-locale="en_US" data-type="vertical" data-theme="dark" data-vanity="liam-mcleod-959105111"><a class="LI-simple-link" href='https://uk.linkedin.com/in/liam-mcleod-959105111?trk=profile-badge'>Liam McLeod</a></div>
+
+small-dark
+<div class="LI-profile-badge"  data-version="v1" data-size="medium" data-locale="en_US" data-type="horizontal" data-theme="dark" data-vanity="liam-mcleod-959105111"><a class="LI-simple-link" href='https://uk.linkedin.com/in/liam-mcleod-959105111?trk=profile-badge'>Liam McLeod</a></div>
