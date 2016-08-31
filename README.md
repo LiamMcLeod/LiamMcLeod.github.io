@@ -1,6 +1,6 @@
 Liam McLeod
 ===================
-[dual1ty.me](http://www.dual1ty.me)
+[liammcleod.co.uk](http://www.liammcleod.co.uk)
 -----------
 GitHub Page
 -----------
