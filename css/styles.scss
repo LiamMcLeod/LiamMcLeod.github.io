@@ -28,6 +28,7 @@ Vars
 
 //Container Vars
 $lightBlue: #05AEDE;
+$offWhite: #eee;
 $darkBlue: #384E77;
 $fadedBlue: #3A435E;
 $fadeRed: #9c4b49;
@@ -41,8 +42,10 @@ $altFooterColour: #222;
 $baseFontFamily: "Montserrat", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
 $programmerFont: NotCourierSans, "Courier New", Consolas;
 // Text Colours
-$darkText: #616161;
-$lightText: #eee;
+// $darkText: #616161;
+// $lightText: #eee;
+$darkText: #3c3c3c;
+$lightText: #888;
 $linkColour: #00BCD4;
 
 //Fonts
@@ -102,7 +105,7 @@ $mobileLineHeight: 1.2em;
 
   //Universal Classes
   .text-light {
-    color: #eee;
+    color: $lightText;
   }
   .bg-light {
 
@@ -136,7 +139,7 @@ $mobileLineHeight: 1.2em;
   #wrapper {
     height: 100%;
     max-width: 100%;
-    background: /*#ddd*/ #222;
+    background: /*#ddd*/ /**#222**/ $offWhite;
   }
 
   //Semantic Elements
@@ -153,6 +156,10 @@ $mobileLineHeight: 1.2em;
   .bg-blue {
     background: $fadedBlue;
     color: #eee;
+  }
+  .bg-off {
+    background: $offWhite;
+    color: $darkText;
   }
   .bg-white {
     background: #ddd;
@@ -206,7 +213,7 @@ $mobileLineHeight: 1.2em;
     font-size: $largeTitle - 1em;
   }
   header .sub-links a, a:link, a:visited {
-    color: #fff;
+    color: $lightText;
   }
 
   header .mobile-btn {
@@ -392,7 +399,7 @@ $mobileLineHeight: 1.2em;
     font-size: $largeTitle - 2.4em;
   }
   header .sub-links a, a:link, a:visited {
-    color: #fff;
+    color: $lightText;
   }
   header .container .project-col {
     margin-top: 100px;
