@@ -139,7 +139,8 @@ $mobileLineHeight: 1.2em;
   #wrapper {
     height: 100%;
     max-width: 100%;
-    background: /*#ddd*/ /**#222**/ $offWhite;
+    background: $offWhite;
+    /*#ddd*/ /**#222**/
   }
 
   //Semantic Elements
