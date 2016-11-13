@@ -557,7 +557,8 @@ $mobileLineHeight: 1.2em;
   #wrapper {
     max-width: 1920px;
     margin: 0 auto;
-    background: #222;
+    background: $offWhite;
+    /*#ddd*/ /**#222**/
   }
 }
 
