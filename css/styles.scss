@@ -226,6 +226,9 @@ $mobileLineHeight: 1.2em;
     color: $fadedBlue;
     text-align: center;
   }
+  ul{
+      list-style-type: none;
+  }
 
   .portfolio, .about, .contact {
     padding: 150px 0 150px 0;
@@ -552,7 +555,7 @@ $mobileLineHeight: 1.2em;
     display: block;
   }
   body {
-    background: #333;
+    background: /*#333*/ $offWhite;
   }
   #wrapper {
     max-width: 1920px;

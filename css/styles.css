@@ -157,6 +157,9 @@ Vars
     color: #3A435E;
     text-align: center; }
 
+  ul {
+    list-style-type: none; }
+
   .portfolio, .about, .contact {
     padding: 150px 0 150px 0;
     height: 900px; }
@@ -411,7 +414,7 @@ Vars
     display: block; }
 
   body {
-    background: #333; }
+    background: #eee; }
 
   #wrapper {
     max-width: 1920px;
