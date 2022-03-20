@@ -9,7 +9,7 @@
     <meta name="description" content="portfolio">
     <meta name="author" content="Liam McLeod">
     <meta name="google-site-verification" content="PJCUqKffUXSD0oo3fvSwqdxZbs0tdN2rj7Rh9qBtK8E" />
-    <title>Liam McLeod :: Web Developer</title>
+    <title>Liam McLeod :: Software Engineer</title>
 
     <meta name="msapplication-TileColor" content="#3c3c3c"/>
     <meta name="msapplication-TileImage" content="/public/mstile-144x144.png"/>
@@ -37,7 +37,8 @@
 
     <link href="css/bootstrap.css" rel="stylesheet">
     <link href="css/bootstrap-social.css" rel="stylesheet">
-    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css">
     <link href="css/fonts.css" rel="stylesheet">
     <!-- Custom CSS-->
     <link href="css/styles.css" rel="stylesheet">
@@ -79,12 +80,16 @@
             </div>
             <div class="sub-links text-light">
                 <ul class="list-inline">
-                    <li><a target="_blank" href="https://github.com/LiamMcLeod">
-                      <span class="fa fa-fw fa-github"></span>
-                    </a></li>
-                    <li><a target="_blank" href="https://gist.github.com/LiamMcLeod">
-                      <span class="fa fa-fw fa-code"></span>
-                    </a></li>
+                    <li>
+                        <a target="_blank" href="https://github.com/LiamMcLeod">
+                            <i class="fa-brands fa-github fa-sm"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://gist.github.com/LiamMcLeod">
+                            <i class="fa fa-fw fa-code fa-sm"></i>
+                        </a>
+                    </li>
                     <!-- <li><a target="_blank" href="https://github.com/LiamMcLeodNDL">
                       <span class="fa fa-fw fa-github"></span>
                     </a></li> -->
@@ -94,18 +99,29 @@
                 <div class="col-sm-5">
                     <ul>
                         <li>
-                            <span class="text-center"><a href="https://github.com/LiamMcLeodNDL">Network Diagnostics Ltd (Lead Software Engineer)</a></span>
+                            <span class="text-center">
+                                <a href="" data-toggle="modal" data-target="#ndlModal">
+                                    Network Diagnostics Ltd (Lead Software Engineer)
+                                </a>
+                            </span>
                         </li>
                         <li>
-                            <span class="text-center"><a href="http://aspen.one">on Aspen (2020-Current)</a></span>
+                            <i class="fa-solid fa-arrow-right"></i>
+                            <span class="text-center">
+                                <a href="http://aspen.one">
+                                    on Aspen (2020-Current)
+                                </a>
+                            </span>
                         </li>
                     </ul>
                 </div>
                 <div class="col-sm-4">
                     <ul>
                         <li>
-                            <span class="text-center"><a href="" data-toggle="modal" data-target="#collegeModal">
-                                Bexhill College (IT Faculty Support) (2015-2017)
+                            <span class="text-center">
+                            <span class="fa-solid fa-turn-down-right"></span>
+                                <a href="" data-toggle="modal" data-target="#collegeModal">
+                                    Bexhill College (IT Faculty Support) (2015-2017)
                                 </a>
                             </span>
                         </li>
@@ -114,14 +130,18 @@
                 <div class="col-sm-3">
                     <ul>
                         <li>
-                            <span class="text-center"><a href="" data-toggle="modal" data-target="#projectsModal"> Full-Stack Developer
-                                    (2016-2020)</a></span>
+                            <span class="text-center">
+                                <a href="" data-toggle="modal" data-target="#projectsModal">
+                                    Full-Stack Developer
+                                    (2016-2020)
+                                </a>
+                            </span>
                         </li>
                     </ul>
                 </div>
             </div>
             <div class="mobile-btn center mobile-only">
-            <form  action="mailto:l.mcleod95@gmail.com?Subject=WebDev">
+            <form  action="mailto:l.mcleod95@gmail.com?Subject=Enquiry: Developer">
                 <button class="btn btn-default" type="submit">Contact</button>
             </form>
             </div>
@@ -157,7 +177,7 @@
                         Credence - Laravel
                     </p>
                     <p>
-                        Revision Rocks - Laravel (Maintenance)
+                        Revision Rocks - Laravel (Webmaster)
                     </p>
                     <p>
                         SteamSwitch - Electron
@@ -172,52 +192,108 @@
             </div>
         </div>
     </div>
-        <div id="collegeModal" class="modal" tabindex="-1" role="dialog">
-            <div class="modal-dialog mt-500" role="document">
-                <div class="modal-content">
-                    <div class="modal-header bg-dark">
-                        <div class="col-xs-10">
-                            <h5 class="modal-title">IT Faculty Support Staff</h5>
-                        </div>
-                        <div class="col-xs-2">
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                <i class="fa fa-times text-light" aria-hidden="true"></i>
-                            </button>
-                        </div>
+    <div id="collegeModal" class="modal" tabindex="-1" role="dialog">
+        <div class="modal-dialog mt-500" role="document">
+            <div class="modal-content">
+                <div class="modal-header bg-dark">
+                    <div class="col-xs-11">
+                        <h5 class="modal-title">IT Faculty Support Staff</h5>
                     </div>
-                    <div class="modal-body">
-                        <p>
-                            I supported students attending Bexhill 6th Form College providing coursework support for Level 3 IT diplomas, Computing and Computer Science A-Levels.
-                        </p>
-                        <strong>Responsibilities included but not limited to: </strong>
-                        <p>
-                            Providing support, lessons and tutorials mainly in Java.
-                        </p>
-                        <p>
-                            Some student projects were created in VB.NET, PHP, Javascript which I was also required to assist and support with.
-                        </p>
-                        <p>
-                            Included supporting staff in their lessons. Providing lesson plans, worksheets, guides, tutorials, one-on-one support.
-                        </p>
-                        <p>
-                            One-on-one tailored support sessions and group coding tutorials.
-                        </p>
-                        <p>
-                            Testing and marking of student assignments.
-                        </p>
-                        <p>
-                            Setup / maintenance of the department's displays.
-                        </p>
-                        <p>
-                            Creation of a bespoke front-end for interactive display used in the IT Faculty
-                        </p>
+                    <div class="col-xs-1">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <i class="fa fa-times text-light" aria-hidden="true"></i>
+                        </button>
                     </div>
-                    <!-- <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                        </div> -->
+                </div>
+                <div class="modal-body">
+                    <p>
+                        I supported students attending Bexhill 6th Form College providing coursework support for Level 3 IT diplomas, Computing and Computer Science A-Levels.
+                    </p>
+                    <strong>Responsibilities included but not limited to: </strong>
+                    <p>
+                        Providing support, lessons and tutorials mainly in Java.
+                    </p>
+                    <p>
+                        Some student projects were created in VB.NET, PHP, Javascript which I was also required to assist and support with.
+                    </p>
+                    <p>
+                        Included supporting staff in their lessons. Providing lesson plans, worksheets, guides, tutorials, one-on-one support.
+                    </p>
+                    <p>
+                        One-on-one tailored support sessions and group coding tutorials.
+                    </p>
+                    <p>
+                        Testing and marking of student assignments.
+                    </p>
+                    <p>
+                        Setup / maintenance of the department's displays.
+                    </p>
+                    <p>
+                        Creation of a bespoke front-end for touch interactive display used in the IT Faculty
+                    </p>
                 </div>
             </div>
         </div>
+    </div>
+    <div id="ndlModal" class="modal" tabindex="-1" role="dialog">
+        <div class="modal-dialog mt-500" role="document">
+            <div class="modal-content">
+                <div class="modal-header bg-dark">
+                    <div class="col-xs-1">
+                        <a target="_blank" href="https://github.com/LiamMcLeodNDL">
+                            <i class="fa-brands fa-github fa-xl"></i>
+                        </a>
+                    </div>  
+                    <div class="col-xs-10">
+                        <h5 class="modal-title">
+                            Lead Software Engineer      
+                        </h5>
+                    </div>
+                    <div class="col-xs-1">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <i class="fa fa-times text-light" aria-hidden="true"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="modal-body">
+                    <p>
+                        Lead Software Engineer of Aspen, an enterprise network solution and Network Diagnostics' flagship product from project foundation. Providing project management, consultation, development and direction to contracted staff.
+                    </p>
+                    <strong>Responsibilities include but not limited to: </strong>
+                    <p>
+                        Full-stack development of Aspen platform
+                    </p>
+                    <p>
+                        Lead design & development of Aspen software
+                    </p>
+                    <p>
+                        Full design and implementation of cloud-server, websocket, client and network architecture.
+                    </p>
+                    <p>
+                        AWS cloud deployment & management
+                    </p>
+                    <p>
+                        Software deployment on customer networks
+                    </p>
+                    <p> 
+                        WebSocket Deployment
+                    </p>
+                    <p>
+                        Database design, implementation & management
+                    </p>
+                    <p>
+                        Asset & repository management
+                    </p>
+                    <p>
+                        Writing full platform documentation, contractor SoWs, investor deck, etc
+                    </p>
+                    <p>
+                        NodeJS, PHP, Python.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
 
 <script src="js/vendor/jquery-2.2.0.min.js"></script><!-- Bootstrap Core JavaScript-->

@@ -1,19 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset
-      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+  <!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
 
-<url>
-  <loc>http://dual1ty.me/</loc>
-  <lastmod>2016-04-27T18:55:44+00:00</lastmod>
-  <changefreq>weekly</changefreq>
-</url>
-<url>
-  <loc>http://dual1ty.me/files/cv.pdf</loc>
-  <lastmod>2016-04-27T18:55:44+00:00</lastmod>
-  <changefreq>weekly</changefreq>
-</url>
+  <url>
+    <loc>http://liammcleod.co.uk/</loc>
+    <lastmod>2022-03-20T17:02:44+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>http://liammcleod.co.uk/cv.pdf</loc>
+    <lastmod>2018-04-27T18:55:44+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
 </urlset>
