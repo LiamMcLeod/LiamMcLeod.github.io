@@ -11,10 +11,10 @@
     <meta name="google-site-verification" content="PJCUqKffUXSD0oo3fvSwqdxZbs0tdN2rj7Rh9qBtK8E" />
     <title>Liam McLeod :: Web Developer</title>
 
-    <meta name="msapplication-TileColor" content="#ff0000"/>
+    <meta name="msapplication-TileColor" content="#3c3c3c"/>
     <meta name="msapplication-TileImage" content="/public/mstile-144x144.png"/>
     <meta name="msapplication-config" content="/public/browserconfig.xml"/>
-    <meta name="theme-color" content="#025344"/>
+    <meta name="theme-color" content="#3c3c3c"/>
 
     <link rel="apple-touch-icon" sizes="57x57" href="img/favicon/apple-touch-icon-57x57.png"/>
     <link rel="apple-touch-icon" sizes="60x60" href="img/favicon/apple-touch-icon-60x60.png"/>
@@ -57,7 +57,8 @@
         <div class="collapse navbar-collapse" id="hamburger">
             <ul class="nav navbar-nav navbar-right">
                 <li><a href="mailto:l.mcleod95@gmail.com?Subject=WebDev"><span class="fa fa-mail-forward"></span> Email </a></li>
-                <li><a href="files/cv.pdf">Resume</a></li>
+                <!-- TODO UPDATE -->
+                <!-- <li><a href="files/cv.pdf">Resume</a></li>  -->
             </ul>
         </div>
     </div>
@@ -67,61 +68,49 @@
     <header class="bg-off">
         <div class="container">
             <div >
-                <img id="header-img" class="img-responsive img-circle" alt="Logo Image" src="img/Liam-Square.png">
+                <img id="header-img" class="img-responsive img-circle" alt="Logo Image" src="img/MCR.jpg">
             </div>
             <div>
                 <span class="title-text">Liam McLeod</span>
             </div>
             <hr>
             <div>
-                <span class="caption-text">Web Developer</span>
+                <span class="caption-text">Software Engineer</span>
             </div>
             <div class="sub-links text-light">
                 <ul class="list-inline">
-                    <li><a target="_blank" href="https://uk.linkedin.com/in/liam-mcleod">
-                      <span class="fa fa-fw fa-linkedin"></span>
-                    </a></li>
                     <li><a target="_blank" href="https://github.com/LiamMcLeod">
                       <span class="fa fa-fw fa-github"></span>
                     </a></li>
                     <li><a target="_blank" href="https://gist.github.com/LiamMcLeod">
                       <span class="fa fa-fw fa-code"></span>
                     </a></li>
+                    <!-- <li><a target="_blank" href="https://github.com/LiamMcLeodNDL">
+                      <span class="fa fa-fw fa-github"></span>
+                    </a></li> -->
                 </ul>
             </div>
             <div class="no-mobile project-col">
-                <div class="col-sm-4">
+                <div class="col-sm-6">
                     <ul>
                         <li>
-                            <span class="text-center"><a href="http://liammcleod.co.uk">Credence (2016-Ongoing)</a></span>
-                            <!-- Laravel, Vue, PostgreSQL  -->
+                            <span class="text-center"><a href="https://github.com/LiamMcLeodNDL">Network Diagnostics Ltd (2020 - Current)</a></span>
+                        </li>
+                        <li>
+                            <span class="text-center"><a href="http://aspen.one">Aspen</a></span>
                         </li>
                     </ul>
                 </div>
-                <div class="col-sm-4">
+                <div class="col-sm-6">
                     <ul>
                         <li>
-                            <span class="text-center"><a href="http://examplar.herokuapp.com">Examplar (2016-On Hold)</a></span>
-                            <!-- NodeJS, Vue, PostgreSQL Need to refactor and convert to components -->
-                        </li>
-                        <li>
-                            <span class="text-center"><a href="api.html"> Examplar API Docs (2016-On Hold)</a></span>
-                            <!-- Auto-Generated -->
+                            <span class="text-center"><a href="" data-toggle="modal" data-target="#projectsModal">Freelance Web Developer (2016-2020)</a></span>
                         </li>
                     </ul>
                 </div>
-                <div class="col-sm-4">
-                    <ul>
-                        <li>
-                        <span class="text-center"><a href="pmj.html">PMJ Groundworks (2013)</a></span>
-                        <!-- PHP5.5 -->
-                        </li>
-                        <li>
-                            <span class="text-center"><a href="indexold.html">Old Website (Early 2016)</a></span>
-                            <!-- Bootstrap, HTML, CSS -->
-                        </li>
-                    </ul>
-                </div>
+                <!-- <div class="col-sm-4">
+                
+                </div> -->
             </div>
             <div class="mobile-btn center mobile-only">
             <form  action="mailto:l.mcleod95@gmail.com?Subject=WebDev">
@@ -130,6 +119,45 @@
             </div>
         </div>
     </header>
+    <div id="projectsModal" class="modal" tabindex="-1" role="dialog">
+        <div class="modal-dialog mt-500" role="document">
+            <div class="modal-content">
+                <div class="modal-header bg-dark">
+                    <div class="col-xs-10">
+                        <h5 class="modal-title">Projects</h5>
+                    </div>
+                    <div class="col-xs-2">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <i class="fa fa-times text-light" aria-hidden="true"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="modal-body">
+                        <p>
+                            PMJ Groundworks - PHP 5.3
+                        </p>
+                        <p>
+                            Examplar - NodeJS 
+                        </p>
+                        <p>
+                            Bayes History - NodeJS 
+                        </p>
+                        <p>
+                            Credence - Laravel
+                        </p>
+                        <p>
+                            Revision Rocks - Laravel (Maintenance)
+                        </p>
+                        <p>
+                            SteamSwitch - Electron
+                        </p>
+                </div>
+                <!-- <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div> -->
+            </div>
+        </div>
+    </div>
 </div>
 
 <script src="js/vendor/jquery-2.2.0.min.js"></script><!-- Bootstrap Core JavaScript-->

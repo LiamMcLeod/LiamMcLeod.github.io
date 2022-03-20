@@ -105,7 +105,7 @@ $mobileLineHeight: 1.2em;
 
   //Universal Classes
   .text-light {
-    color: $lightText;
+    color: $offWhite;
   }
   .bg-light {
 
@@ -176,7 +176,7 @@ $mobileLineHeight: 1.2em;
     text-align: center;
   }
   #header-img {
-    width: 30%;
+    width: 20%;
     margin: 0 auto;
   }
   .title-text {
@@ -468,7 +468,7 @@ $mobileLineHeight: 1.2em;
   }
 
   #header-img {
-    width: 10%;
+    width: 20%;
     margin: 0 auto;
   }
   // Bootstrap Classes
@@ -581,4 +581,9 @@ $mobileLineHeight: 1.2em;
  */
 .cf {
   *zoom: 1;
+}
+
+.bg-dark {
+  background-color: $footerColour;
+  color: $offWhite;
 }
